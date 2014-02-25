@@ -1,0 +1,33 @@
+﻿/*
+    monochromatic color-scheme
+    
+    teal, dark to light
+    #00717F
+    #84F1FF
+    #D0FAFF
+
+    gray, dark to light
+    #687D7F
+    #A6C8CC
+    
+    */
+
+
+
+
+
+body {
+    background-color:#307F79;
+}
+
+div {
+background-color:#00CCBB;
+}
+
+header {
+    background-color:#007F57
+}
+
+footer {
+    background-color:#007F57
+}

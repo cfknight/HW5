@@ -18,12 +18,14 @@
 
 
 body {
-    background-color:#00717F;
+    background-color:#FF6F00;
 }
 
 div {
-background-color:#A6C8CC;
+background-color:white;
 text-align:center;
+margin: 5px 0 10px;
+border: solid 2px groove;
 }
 
 header {
@@ -37,11 +39,11 @@ footer {
 /*CSS for Gridview*/
 
 .cssgridview {
-    width: auto;
-    margin: 5px 0 10px;
+    width: 550px;
     border: solid 1px black;
     border-collapse: collapse;
     text-align: center;
+    background-color:#a64d00;
 }
 
     .cssgridview td {
@@ -53,12 +55,17 @@ footer {
     .cssgridview th {
         padding: 10px;
         color: black;
-        background: #84F1FF;
+        background: #FFF70F;
     }
 
     .cssgridview .alt {
-    background-color: #687D7F;
+    background-color: #ffa900;
 }
 
+#table {
+width:600px;
+margin-right:auto;
+margin-left:auto;
+}
 
 

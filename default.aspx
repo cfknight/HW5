@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div style="position: relative">
     
     <h1>Chuck's Rockin' Mortgage Calculator</h1>
         
@@ -19,7 +19,7 @@
      
         *
      
-        Loan Amount:<asp:TextBox ID="loanAmtTB" runat="server" ></asp:TextBox>
+        Loan Amount:&nbsp;&nbsp;&nbsp; <asp:TextBox ID="loanAmtTB" runat="server" ></asp:TextBox>
                   
         <asp:RequiredFieldValidator ID="amountRFV" runat="server" ControlToValidate="loanAmtTB" ErrorMessage="Please enter a loan amount."></asp:RequiredFieldValidator>
                   
@@ -27,7 +27,7 @@
         
         *      
         
-        Annual Interest %: <asp:TextBox ID="interestTB" runat="server" ></asp:TextBox>
+        Annual Interest %:&nbsp;&nbsp;&nbsp; <asp:TextBox ID="interestTB" runat="server" ></asp:TextBox>
         
         <asp:RequiredFieldValidator ID="interestRFV" runat="server" ControlToValidate="interestTB" ErrorMessage="Please enter an interest rate."></asp:RequiredFieldValidator>
         
@@ -35,7 +35,7 @@
 
         *
 
-        Loan Term (Years): <asp:TextBox ID="termTB" runat="server" ></asp:TextBox>
+        Loan Term (Years):&nbsp;&nbsp;&nbsp; <asp:TextBox ID="termTB" runat="server" ></asp:TextBox>
         
         <asp:RequiredFieldValidator ID="termRFV" runat="server" ControlToValidate="termTB" ErrorMessage="Please enter a loan term."></asp:RequiredFieldValidator>
         
@@ -48,15 +48,16 @@
         <br />
         <br />
         Welcome to my mortgage calculator. Please complete the fields above to have your monthly payment and loan repayment schedule calculated for you.<br /><br />
-                
+               
         <h2>Monthly Payment: &nbsp; <asp:Label ID="lblMonthlyPmt" runat="server" BackColor="White"></asp:Label></h2>
-        
-        <br /><br />
-        
-        <asp:GridView ID="loanGridView" runat="server" CssClass="cssgridview">
+        </div>
+
+        <div id="table">
+        <br />
+                <asp:GridView ID="loanGridView" runat="server" CssClass="cssgridview" HorizontalAlign="Center">
             <AlternatingRowStyle CssClass="alt" />
             </asp:GridView>
-            
+         <br />   
         </div>
     </form>
 </body>

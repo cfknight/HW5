@@ -53,7 +53,9 @@
         
         <br /><br />
         
-        <asp:GridView ID="loanGridView" runat="server" />
+        <asp:GridView ID="loanGridView" runat="server" CssClass="cssgridview">
+            <AlternatingRowStyle CssClass="alt" />
+            </asp:GridView>
             
         </div>
     </form>

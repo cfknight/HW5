@@ -11,6 +11,7 @@ Partial Class _Default
         Dim term As Integer
         Dim loanTerm As Integer
         Dim monthlyPayment As Double
+        Dim dateToday As Date
 
         'This section is declaring the variables for loan amortization.
         Dim interestPaid As Double
@@ -48,6 +49,7 @@ Partial Class _Default
 
         'Adds items to list box, formats them for currency and adds pad spacing for each item.
         loanAmortTbl.Columns.Add("Payment Number", System.Type.GetType("System.String"))
+        loanAmortTbl.Columns.Add("Payment Date", System.Type.GetType("System.String"))
         loanAmortTbl.Columns.Add("Principal Paid", System.Type.GetType("System.String"))
         loanAmortTbl.Columns.Add("Interest Paid", System.Type.GetType("System.String"))
 
@@ -62,10 +64,13 @@ Partial Class _Default
             principal = monthlyPayment - interestPaid
             nBalance = loanAmount - principal
             loanAmount = nBalance
+            dateToday = DateTime.Now.AddMonths(counterStart).ToShortDateString
+
 
             'Writes the data to a new row in the gridview.
             tRow = loanAmortTbl.NewRow()
             tRow("Payment Number") = String.Format(counterStart)
+            tRow("Payment Date") = String.Format(dateToday)
             tRow("Principal Paid") = String.Format("{0:C}", principal) ' String.Format("{0:C},principal) formats the variable "prinicpal" as currency (C).
             tRow("Interest Paid") = String.Format("{0:C}", interestPaid)
             loanAmortTbl.Rows.Add(tRow)
@@ -80,4 +85,10 @@ Partial Class _Default
 
     End Sub
 
+    Protected Sub clearBTN_Click(sender As Object, e As EventArgs) Handles clearBTN.Click
+        loanAmtTB.Text = String.Empty
+        termTB.Text = String.Empty
+        interestTB.Text = String.Empty
+        lblMonthlyPmt.Text = String.Empty
+    End Sub
 End Class

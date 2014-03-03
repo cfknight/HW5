@@ -17,17 +17,47 @@
 
 
 body {
-    background-color:#307F79;
+    background-color:#00717F;
 }
 
 div {
-background-color:#00CCBB;
+background-color:#A6C8CC;
 }
 
 header {
-    background-color:#007F57
+    background-color:#D0FAFF;
 }
 
 footer {
-    background-color:#007F57
+    background-color:#D0FAFF;
 }
+
+/*CSS for Gridview*/
+
+.cssgridview {
+    width: auto;
+    margin: 5px 0 10px;
+    border: solid 1px #687D7F;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    .cssgridview td {
+        padding: 10px; 
+        border:solid 1px;
+        color:#D0FAFF;
+    }
+
+    .cssgridview th {
+        padding: 10px;
+        color: #;
+        background: #;
+    }
+
+    .cssgridview .alt
+{
+    background-color: #84F1FF;
+}
+
+
+

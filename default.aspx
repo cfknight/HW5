@@ -15,11 +15,11 @@
     
     <h1>Chuck's Rockin' Mortgage Calculator</h1>
         
-        <br /><br />
+        <br />
      
         *
      
-        Loan Amount:&nbsp;&nbsp;&nbsp; <asp:TextBox ID="loanAmtTB" runat="server" ></asp:TextBox>
+        Loan Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <asp:TextBox ID="loanAmtTB" runat="server" ></asp:TextBox>
                   
         <asp:RequiredFieldValidator ID="amountRFV" runat="server" ControlToValidate="loanAmtTB" ErrorMessage="Please enter a loan amount."></asp:RequiredFieldValidator>
                   
@@ -38,6 +38,8 @@
         Loan Term (Years):&nbsp;&nbsp;&nbsp; <asp:TextBox ID="termTB" runat="server" ></asp:TextBox>
         
         <asp:RequiredFieldValidator ID="termRFV" runat="server" ControlToValidate="termTB" ErrorMessage="Please enter a loan term."></asp:RequiredFieldValidator>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
         <br /><br />
 

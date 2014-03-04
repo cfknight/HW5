@@ -39,7 +39,7 @@ footer {
 /*CSS for Gridview*/
 
 .cssgridview {
-    width: 550px;
+    width: auto;
     border: solid 1px black;
     border-collapse: collapse;
     text-align: center;
@@ -63,7 +63,7 @@ footer {
 }
 
 #table {
-width:600px;
+width:auto;
 margin-right:auto;
 margin-left:auto;
 }
